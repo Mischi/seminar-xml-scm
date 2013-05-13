@@ -4,12 +4,12 @@ xml-scm
 ## Installationsanleitung
 
 	- install [Node](http://nodejs.org/)
-	- git clone
-	- cd xml-scm
+	- git clone https://github.com/Mischi/seminar-xml-scm.git
+	- cd seminar-xml-scm
 	- npm install -g grunt-cli
 	- npm install
 
 ## Projekt starten
 
-	- cd xml-scm
+	- cd seminar-xml-scm
 	- grunt
