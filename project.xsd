@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://schemas.example.com/project" xmlns:u="http://schemas.example.com/user" xmlns:project="http://schemas.example.com/project" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <xs:import namespace="http://schemas.example.com/user" schemaLocation="user.xsd"/>
+  <xs:import namespace="http://www.w3.org/2001/XMLSchema-instance" schemaLocation="xsi.xsd"/>
+  
+  <xs:element name="project">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="project:name"/>
+        <xs:element ref="project:description"/>
+        <xs:element ref="project:users"/>
+        <xs:element ref="project:commits"/>
+      </xs:sequence>
+      <xs:attribute ref="xsi:schemaLocation" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="name" type="xs:NCName"/>
+  
+  <xs:element name="description" type="xs:string"/>
+  
+  <xs:element name="users">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="u:user"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="commits">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="project:commit"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="commit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="project:commiter"/>
+        <xs:element ref="project:author"/>
+        <xs:element ref="project:date"/>
+        <xs:element ref="project:message"/>
+        <xs:element ref="project:diff"/>
+      </xs:sequence>
+      <xs:attribute name="id" use="required" type="xs:ID"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="commiter" type="xs:IDREF"/>
+  <xs:element name="author" type="xs:IDREF"/>
+  <xs:element name="date" type="xs:dateTime"/>
+  <xs:element name="message" type="xs:string"/>
+  <xs:element name="diff" type="xs:string"/>
+</xs:schema>
