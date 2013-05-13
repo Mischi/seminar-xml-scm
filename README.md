@@ -1,6 +1,11 @@
 xml-scm
 ===============================
 
+## Demo
+
+[http://mischi.github.io/seminar-xml-scm/SampleProject.xml](http://mischi.github.io/seminar-xml-scm/SampleProject.xml)
+
+
 ## Installationsanleitung
 
 	- install [Node](http://nodejs.org/)
