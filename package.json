@@ -1,0 +1,15 @@
+{
+  "name": "xml-scm",
+  "version": "0.0.1",
+  "description": "XML",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-livereload": "~0.1.2",
+    "grunt-contrib-connect": "*",
+    "grunt-regarde": "~0.1.1"
+  },
+  "author": "Fabian Raetz",
+  "license": "BSD"
+}

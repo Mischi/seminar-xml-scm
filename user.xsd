@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://schemas.example.com/user" xmlns:u="http://schemas.example.com/user" xmlns:project="http://schemas.example.com/project" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <xs:import namespace="http://schemas.example.com/project" schemaLocation="project.xsd"/>
+  <xs:import namespace="http://www.w3.org/2001/XMLSchema-instance" schemaLocation="xsi.xsd"/>
+  <xs:element name="user">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="u:firstname"/>
+        <xs:element ref="u:lastname"/>
+        <xs:element ref="u:image"/>
+        <xs:element ref="u:contact"/>
+      </xs:sequence>
+      <xs:attribute name="id" use="required" type="xs:ID"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="firstname" type="xs:NCName"/>
+  <xs:element name="lastname" type="xs:NCName"/>
+  <xs:element name="image" type="xs:string"/>
+  <xs:element name="contact">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="u:email"/>
+        <xs:element minOccurs="0" ref="u:aim"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="email">
+    <xs:complexType mixed="true">
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="aim" type="xs:string"/>
+</xs:schema>

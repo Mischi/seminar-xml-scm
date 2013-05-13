@@ -1,0 +1,619 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="project.xsl"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://schemas.example.com/project project.xsd"
+ xmlns="http://schemas.example.com/project"
+ xmlns:u="http://schemas.example.com/user">
+  <name>SampleProject</name>
+  <description>A Sample Project to demonstrate the Capabilities of our XML Schema.</description>
+  <users>
+    <u:user id="u-1">
+      <u:firstname>Fabian</u:firstname>
+      <u:lastname>Raetz</u:lastname>
+      <u:image>images/fraetz.jpg</u:image>
+      <u:contact>
+        <u:email type="primary">fabian.raetz@gmail.com</u:email>
+        <u:email type="secondary">fraetz@brockhaus-ag.de</u:email>
+        <u:aim>23228509</u:aim>
+      </u:contact>
+    </u:user>
+    <u:user id="u-2">
+      <u:firstname>Andreas</u:firstname>
+      <u:lastname>Diepenbrock</u:lastname>
+      <u:image>images/adiepenbrock.jpg</u:image>
+      <u:contact>
+        <u:email type="primary">mail@adiepenbrock.de</u:email>
+      </u:contact>
+    </u:user>
+    <u:user id="u-3">
+      <u:firstname>Tim</u:firstname>
+      <u:lastname>Trümper</u:lastname>
+      <u:image>images/Bart-Simpson.png</u:image>
+      <u:contact>
+        <u:email type="primary">tim@trümper.de</u:email>
+      </u:contact>
+    </u:user>
+    <u:user id="u-4">
+      <u:firstname>Max</u:firstname>
+      <u:lastname>Kuper</u:lastname>
+      <u:image>images/homer-simpson.jpg</u:image>
+      <u:contact>
+        <u:email type="primary">max@kupper.de</u:email>
+        <u:email type="secondary">maximilian@kupper.de</u:email>
+        <u:aim>238776365</u:aim>
+      </u:contact>
+    </u:user>
+    <u:user id="u-5">
+      <u:firstname>Michael</u:firstname>
+      <u:lastname>Schick</u:lastname>
+      <u:image>images/Moe_Szyslak.png</u:image>
+      <u:contact>
+        <u:email type="primary">micha@schick.de</u:email>
+        <u:aim>23873235</u:aim>
+      </u:contact>
+    </u:user>
+    <u:user id="u-6">
+      <u:firstname>Simon</u:firstname>
+      <u:lastname>Werner</u:lastname>
+      <u:image>images/nelson-muntz_original.jpg</u:image>
+      <u:contact>
+        <u:email type="primary">simon@werner.de</u:email>
+        <u:email type="secondary">mail@werner.de</u:email>
+        <u:aim>2382235</u:aim>
+      </u:contact>
+    </u:user>
+  </users>
+  <commits>
+    <commit id="c-1">
+      <commiter>u-1</commiter>
+      <author>u-2</author>
+      <date>2001-10-26T21:32:52</date>
+      <message>Initial Commit</message>
+      <diff>
+<![CDATA[diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..110ec2d
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,8 @@
++<html>
++    <head>
++        <title>SampleProject</title>
++    </head>
++    <body>
++        <h1>Sample Project</h1>
++    </body>
++</html>]]>
+      </diff>
+    </commit>
+    
+    <commit id="c-2">
+      <commiter>u-1</commiter>
+      <author>u-1</author>
+      <date>2001-10-26T21:32:52</date>
+      <message>Initial Commit</message>
+      <diff>
+        <![CDATA[diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..110ec2d
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,8 @@
++<html>
++    <head>
++        <title>SampleProject</title>
++    </head>
++    <body>
++        <h1>Sample Project</h1>
++    </body>
++</html>]]>
+      </diff>
+    </commit>
+    
+    <commit id="c-3">
+      <commiter>u-1</commiter>
+      <author>u-2</author>
+      <date>2013-04-09T21:32:52</date>
+      <message>Initial Commit Lorem Ipsum blablabla Blablablabalkdwwadaw jojojokkakahdhwad</message>
+      <diff>
+<![CDATA[diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..110ec2d
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,8 @@
++<html>
++    <head>
++        <title>SampleProject</title>
++    </head>
++    <body>
++        <h1>Sample Project</h1>
++    </body>
++</html>]]>
+      </diff>
+    </commit>
+    
+    <commit id="c-4">
+      <commiter>u-1</commiter>
+      <author>u-2</author>
+      <date>2001-10-26T21:32:52</date>
+      <message>Initial Commit</message>
+      <diff>
+        <![CDATA[diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..110ec2d
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,8 @@
++<html>
++    <head>
++        <title>SampleProject</title>
++    </head>
++    <body>
++        <h1>Sample Project</h1>
++    </body>
++</html>]]>
+      </diff>
+    </commit>
+    
+    <commit id="c-5">
+      <commiter>u-1</commiter>
+      <author>u-2</author>
+      <date>2001-10-26T21:32:52</date>
+      <message>Initial Commit</message>
+      <diff>
+        <![CDATA[diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..110ec2d
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,8 @@
++<html>
++    <head>
++        <title>SampleProject</title>
++    </head>
++    <body>
++        <h1>Sample Project</h1>
++    </body>
++</html>]]>
+      </diff>
+    </commit>
+    <commit id="c-6">
+      <commiter>u-3</commiter>
+      <author>u-4</author>
+      <date>2001-10-26T21:32:52</date>
+      <message>Added feature XY</message>
+      <diff>
+        <![CDATA[
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..110ec2d
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,8 @@
++<html>
++    <head>
++        <title>SampleProject</title>
++    </head>
++    <body>
++        <h1>Sample Project</h1>
++    </body>
++</html>]]>
+      </diff>
+    </commit>
+    <commit id="c-7">
+      <commiter>u-4</commiter>
+      <author>u-4</author>
+      <date>2001-11-26T21:32:52</date>
+      <message>Refactor feature XY</message>
+      <diff>
+        <![CDATA[
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..110ec2d
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,8 @@
++<html>
++    <head>
++        <title>SampleProject</title>
++    </head>
++    <body>
++        <h1>Sample Project</h1>
++    </body>
++</html>]]>
+      </diff>
+    </commit>
+    <commit id="c-8">
+      <commiter>u-6</commiter>
+      <author>u-4</author>
+      <date>2001-10-26T22:32:52</date>
+      <message>Added feature XYZ</message>
+      <diff>
+        <![CDATA[
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..110ec2d
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,8 @@
++<html>
++    <head>
++        <title>SampleProject</title>
++    </head>
++    <body>
++        <h1>Sample Project</h1>
++    </body>
++</html>]]>
+      </diff>
+    </commit>
+    <commit id="c-9">
+      <commiter>u-3</commiter>
+      <author>u-6</author>
+      <date>2001-10-27T21:32:52</date>
+      <message>Deleted files</message>
+      <diff>
+        <![CDATA[
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..110ec2d
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,8 @@
++<html>
++    <head>
++        <title>SampleProject</title>
++    </head>
++    <body>
++        <h1>Sample Project</h1>
++    </body>
++</html>]]>
+      </diff>
+    </commit>
+    <commit id="c-10">
+      <commiter>u-2</commiter>
+      <author>u-5</author>
+      <date>2001-10-29T20:32:52</date>
+      <message>Refactor stlyesheets</message>
+      <diff>
+        <![CDATA[
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..110ec2d
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,8 @@
++<html>
++    <head>
++        <title>SampleProject</title>
++    </head>
++    <body>
++        <h1>Sample Project</h1>
++    </body>
++</html>]]>
+      </diff>
+    </commit>
+    <commit id="c-11">
+      <commiter>u-3</commiter>
+      <author>u-6</author>
+      <date>2001-11-01T14:32:52</date>
+      <message>Refactor scripts</message>
+      <diff>
+        <![CDATA[
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..110ec2d
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,8 @@
++<html>
++    <head>
++        <title>SampleProject</title>
++    </head>
++    <body>
++        <h1>Sample Project</h1>
++    </body>
++</html>]]>
+      </diff>
+    </commit>
+    <commit id="c-12">
+      <commiter>u-2</commiter>
+      <author>u-5</author>
+      <date>2001-09-01T14:32:52</date>
+      <message>Refactor scripts part 2</message>
+      <diff>
+        <![CDATA[
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..110ec2d
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,8 @@
++<html>
++    <head>
++        <title>SampleProject</title>
++    </head>
++    <body>
++        <h1>Sample Project</h1>
++    </body>
++</html>]]>
+      </diff>
+    </commit>
+    <commit id="c-13">
+      <commiter>u-4</commiter>
+      <author>u-4</author>
+      <date>2001-09-01T15:32:52</date>
+      <message>Refactor scripts part 3</message>
+      <diff>
+        <![CDATA[
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..110ec2d
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,8 @@
++<html>
++    <head>
++        <title>SampleProject</title>
++    </head>
++    <body>
++        <h1>Sample Project</h1>
++    </body>
++</html>]]>
+      </diff>
+    </commit>
+    <commit id="c-14">
+      <commiter>u-4</commiter>
+      <author>u-4</author>
+      <date>2001-09-01T16:50:52</date>
+      <message>Refactor scripts part 4</message>
+      <diff>
+        <![CDATA[
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..110ec2d
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,8 @@
++<html>
++    <head>
++        <title>SampleProject</title>
++    </head>
++    <body>
++        <h1>Sample Project</h1>
++    </body>
++</html>]]>
+      </diff>
+    </commit>
+    <commit id="c-15">
+      <commiter>u-3</commiter>
+      <author>u-6</author>
+      <date>2001-09-02T17:50:52</date>
+      <message>Lease Beta</message>
+      <diff>
+        <![CDATA[
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..110ec2d
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,8 @@
++<html>
++    <head>
++        <title>SampleProject</title>
++    </head>
++    <body>
++        <h1>Sample Project</h1>
++    </body>
++</html>]]>
+      </diff>
+    </commit>
+    <commit id="c-16">
+      <commiter>u-1</commiter>
+      <author>u-5</author>
+      <date>2001-09-03T12:50:52</date>
+      <message>Fix Bug (Footer)</message>
+      <diff>
+        <![CDATA[
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..110ec2d
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,8 @@
++<html>
++    <head>
++        <title>SampleProject</title>
++    </head>
++    <body>
++        <h1>Sample Project</h1>
++    </body>
++</html>]]>
+      </diff>
+    </commit>
+    <commit id="c-17">
+      <commiter>u-2</commiter>
+      <author>u-4</author>
+      <date>2001-09-03T13:50:52</date>
+      <message>Fix Bug (Header)</message>
+      <diff>
+        <![CDATA[
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..110ec2d
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,8 @@
++<html>
++    <head>
++        <title>SampleProject</title>
++    </head>
++    <body>
++        <h1>Sample Project</h1>
++    </body>
++</html>]]>
+      </diff>
+    </commit>
+    <commit id="c-18">
+      <commiter>u-3</commiter>
+      <author>u-4</author>
+      <date>2001-09-03T14:50:52</date>
+      <message>Fix Bug (Header)</message>
+      <diff>
+        <![CDATA[
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..110ec2d
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,8 @@
++<html>
++    <head>
++        <title>SampleProject</title>
++    </head>
++    <body>
++        <h1>Sample Project</h1>
++    </body>
++</html>]]>
+      </diff>
+    </commit>
+    <commit id="c-19">
+      <commiter>u-6</commiter>
+      <author>u-6</author>
+      <date>2001-09-04T14:50:52</date>
+      <message>Fix Bug (Article)</message>
+      <diff>
+        <![CDATA[
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..110ec2d
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,8 @@
++<html>
++    <head>
++        <title>SampleProject</title>
++    </head>
++    <body>
++        <h1>Sample Project</h1>
++    </body>
++</html>]]>
+      </diff>
+    </commit>
+    <commit id="c-20">
+      <commiter>u-3</commiter>
+      <author>u-3</author>
+      <date>2001-09-05T14:50:52</date>
+      <message>Fix Bug (Article)</message>
+      <diff>
+        <![CDATA[
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..110ec2d
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,8 @@
++<html>
++    <head>
++        <title>SampleProject</title>
++    </head>
++    <body>
++        <h1>Sample Project</h1>
++    </body>
++</html>]]>
+      </diff>
+    </commit>
+ <commit id="c-21">
+      <commiter>u-5</commiter>
+      <author>u-2</author>
+      <date>2001-09-05T14:50:52</date>
+      <message>Fix Bug (Article)</message>
+      <diff>
+        <![CDATA[
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..110ec2d
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,8 @@
++<html>
++    <head>
++        <title>SampleProject</title>
++    </head>
++    <body>
++        <h1>Sample Project</h1>
++    </body>
++</html>]]>
+      </diff>
+    </commit>
+     <commit id="c-22">
+      <commiter>u-6</commiter>
+      <author>u-3</author>
+      <date>2001-09-05T14:50:52</date>
+      <message>Fix Bug (Article)</message>
+      <diff>
+        <![CDATA[
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..110ec2d
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,8 @@
++<html>
++    <head>
++        <title>SampleProject</title>
++    </head>
++    <body>
++        <h1>Sample Project</h1>
++    </body>
++</html>]]>
+      </diff>
+    </commit>
+     <commit id="c-23">
+      <commiter>u-4</commiter>
+      <author>u-4</author>
+      <date>2001-09-05T14:50:52</date>
+      <message>Fix Bug (Article)</message>
+      <diff>
+        <![CDATA[
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..110ec2d
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,8 @@
++<html>
++    <head>
++        <title>SampleProject</title>
++    </head>
++    <body>
++        <h1>Sample Project</h1>
++    </body>
++</html>]]>
+      </diff>
+    </commit>
+    <commit id="c-24">
+      <commiter>u-5</commiter>
+      <author>u-6</author>
+      <date>2001-09-05T14:50:52</date>
+      <message>Fix Bug (Article)</message>
+      <diff>
+        <![CDATA[
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..110ec2d
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,8 @@
++<html>
++    <head>
++        <title>SampleProject</title>
++    </head>
++    <body>
++        <h1>Sample Project</h1>
++    </body>
++</html>]]>
+      </diff>
+    </commit>
+  </commits>
+</project>

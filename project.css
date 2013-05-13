@@ -1,0 +1,274 @@
+/*  Colors
+ *  darkblue:   #2AA49A
+ *  lightblue:  #5BFFF5
+ *  green:      #E6FF5B
+ *  darkgrey:   #AE9D8E
+ *  lightgrey:  #DDD7C7
+ * 
+ */
+
+/* apply a natural box layout model to all elements 
+ *
+ * http://paulirish.com/2012/box-sizing-border-box-ftw/
+ */
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {  
+    margin: 0;
+    
+    background-color: #fff;
+    color: #000;
+}
+
+h1, h2, h3, h4, h5, h6 { color: #2AA49A; }
+
+.centered {
+    margin: 0 auto;
+    width: 800px;
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    
+    background-color: #DDD7C7;
+    border-bottom: 2px solid #5BFFF5;
+}
+
+nav > div {
+    display: -webkit-flex;
+	display: flex;
+}
+
+    nav a {
+    	width: 10em;
+    	height: 48px;
+    	line-height: 48px;       
+        text-align: center;
+        
+        font-size: 170%;
+        color: #AE9D8E;
+        background-color: #E6FF5B;
+        border-left: 2px solid #DDD7C7;
+        border-right: 2px solid #DDD7C7;
+        
+        text-decoration:none;
+        cursor: pointer;
+    }
+    
+    nav a:hover, nav a.active { 
+        color: #2AA49A;
+        background-color: #5BFFF5; 
+    }
+  
+  
+body {
+    padding-top: 80px;
+}
+
+#hero > h1 {
+    margin-top: 1em;
+    margin-bottom: 0.2em;
+    font-size: 400%;
+    
+    color: #2AA49A;
+}
+
+#hero > p {
+    margin: 0;
+    margin-bottom: 4em;
+
+    color: #AE9D8E;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+main {
+    min-height: 100%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    
+    height: 80px;
+    width: 100%;
+    
+    color: #2AA49A;
+    font-weight: bold;
+    
+    background-color: #DDD7C7;
+    border-top: 2px solid #E6FF5B;
+}
+
+
+
+section#users #users-container{
+    margin-left: -10px;
+}
+
+section#users.hidden {
+    display: none;
+}
+
+    section#users .user,
+    section#users .details {
+        -moz-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        -webkit-transition: all 0.4s;
+        transition: all 0.4s;  
+    }
+
+    section#users .user {
+        position: relative;
+        height: 300px;
+        width: 300px;
+        float: left;
+        
+        margin: 10px;
+        padding: 10px;
+        
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-size: 100%;     
+    }
+
+    section#users .user:last-child {
+        margin-bottom: 120px;
+    }
+
+    section#users .user:hover {
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    
+    section#users .details {
+        position: absolute;
+        width: 100%;
+        height: 30px;
+        bottom: 0;
+        left: 0;
+        
+        padding: 0 10px;      
+        overflow: hidden;
+        background-color: rgba(221, 215, 199, 0.9);
+    }
+
+    section#users .user:hover .details {
+        height: 200px;
+    }
+
+        section#users .details h3 { margin: 5px }
+
+        section#users .details h3 { margin-left: 0; }
+
+        section#users .details h4,
+        section#users .details ul { margin: 5px 0; }
+
+        section#users .details ul { padding-left: 0px; }
+
+        section#users .details li { list-style-type: none; }
+
+        section#users .details .primary {
+            font-size: 90%;
+            font-weight: bold;
+            color: #AE9D8E;
+        }
+    
+    
+section#commits.hidden { display: none; }
+
+.commit:last-child { margin-bottom: 130px; }
+
+.commit details {
+    width: 100%;
+    margin: 20px 0;
+    
+    border: 1px solid #DDD7C7;
+}
+
+    .commit details > summary {    
+        height: 50px;
+        line-height: 50px;
+        
+        cursor: pointer;
+    }
+    
+    .summary-container {
+        display: -webkit-flex;
+	    display: flex;
+    }
+          
+        .summary-image { width: 80px; }
+        .summary-image img { height: 50px; }
+        
+        .summary-info {   
+           -webkit-flex: auto;
+           flex: auto;
+        }
+        
+        .summary-info p { margin: 0; }
+        
+        
+    
+    .commit details > summary::-webkit-details-marker {
+        display: none;
+        
+        color: #AE9D8E;
+        font-size: 1.5em;
+    }
+
+
+
+
+
+
+    
+@media (min-width: 450px) and (max-width: 950px) {
+   /* Darstellung auf Netbooks */
+    .centered {
+        width: auto;
+        margin: 0 20px
+    }
+} 
+ 
+@media (max-width: 450px) {
+    /* mobile Geräte */
+    .centered {
+        width: auto;
+        margin: 0 10px
+    }
+    
+    nav { 
+        height: 98px; 
+        border: 0;
+    }
+    
+    nav > div.centered {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+     
+        margin: 0;
+    }
+    
+    
+        nav a {
+            width: auto; 
+            
+            border: 0;
+            border-top: 2px solid #DDD7C7;
+        }
+    
+    #hero > h1 { font-size: 300%; }
+    
+    footer { font-size: 90%; }
+}
